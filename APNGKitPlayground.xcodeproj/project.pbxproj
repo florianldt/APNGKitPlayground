@@ -8,22 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		17B74F592922B8E400A77BD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B74F582922B8E400A77BD4 /* AppDelegate.swift */; };
-		17B74F5B2922B8E400A77BD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B74F5A2922B8E400A77BD4 /* SceneDelegate.swift */; };
 		17B74F5D2922B8E400A77BD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B74F5C2922B8E400A77BD4 /* ViewController.swift */; };
-		17B74F602922B8E400A77BD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B74F5E2922B8E400A77BD4 /* Main.storyboard */; };
 		17B74F622922B8E400A77BD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B74F612922B8E400A77BD4 /* Assets.xcassets */; };
 		17B74F652922B8E400A77BD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B74F632922B8E400A77BD4 /* LaunchScreen.storyboard */; };
+		17B74F702922B9EA00A77BD4 /* APNGKit in Frameworks */ = {isa = PBXBuildFile; productRef = 17B74F6F2922B9EA00A77BD4 /* APNGKit */; };
+		17B74F732922C01E00A77BD4 /* elephant@2x.apng in Resources */ = {isa = PBXBuildFile; fileRef = 17B74F712922C01E00A77BD4 /* elephant@2x.apng */; };
+		17B74F742922C01E00A77BD4 /* elephant.apng in Resources */ = {isa = PBXBuildFile; fileRef = 17B74F722922C01E00A77BD4 /* elephant.apng */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17B74F552922B8E400A77BD4 /* APNGKitPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APNGKitPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B74F582922B8E400A77BD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17B74F5A2922B8E400A77BD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		17B74F5C2922B8E400A77BD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		17B74F5F2922B8E400A77BD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17B74F612922B8E400A77BD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17B74F642922B8E400A77BD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17B74F662922B8E400A77BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17B74F712922C01E00A77BD4 /* elephant@2x.apng */ = {isa = PBXFileReference; lastKnownFileType = file; path = "elephant@2x.apng"; sourceTree = "<group>"; };
+		17B74F722922C01E00A77BD4 /* elephant.apng */ = {isa = PBXFileReference; lastKnownFileType = file; path = elephant.apng; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17B74F702922B9EA00A77BD4 /* APNGKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,10 +58,10 @@
 		17B74F572922B8E400A77BD4 /* APNGKitPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				17B74F722922C01E00A77BD4 /* elephant.apng */,
+				17B74F712922C01E00A77BD4 /* elephant@2x.apng */,
 				17B74F582922B8E400A77BD4 /* AppDelegate.swift */,
-				17B74F5A2922B8E400A77BD4 /* SceneDelegate.swift */,
 				17B74F5C2922B8E400A77BD4 /* ViewController.swift */,
-				17B74F5E2922B8E400A77BD4 /* Main.storyboard */,
 				17B74F612922B8E400A77BD4 /* Assets.xcassets */,
 				17B74F632922B8E400A77BD4 /* LaunchScreen.storyboard */,
 				17B74F662922B8E400A77BD4 /* Info.plist */,
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = APNGKitPlayground;
+			packageProductDependencies = (
+				17B74F6F2922B9EA00A77BD4 /* APNGKit */,
+			);
 			productName = APNGKitPlayground;
 			productReference = 17B74F552922B8E400A77BD4 /* APNGKitPlayground.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 17B74F4C2922B8E400A77BD4;
+			packageReferences = (
+				17B74F6E2922B9EA00A77BD4 /* XCRemoteSwiftPackageReference "APNGKit" */,
+			);
 			productRefGroup = 17B74F562922B8E400A77BD4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +133,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17B74F742922C01E00A77BD4 /* elephant.apng in Resources */,
 				17B74F652922B8E400A77BD4 /* LaunchScreen.storyboard in Resources */,
 				17B74F622922B8E400A77BD4 /* Assets.xcassets in Resources */,
-				17B74F602922B8E400A77BD4 /* Main.storyboard in Resources */,
+				17B74F732922C01E00A77BD4 /* elephant@2x.apng in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,21 +149,12 @@
 			files = (
 				17B74F5D2922B8E400A77BD4 /* ViewController.swift in Sources */,
 				17B74F592922B8E400A77BD4 /* AppDelegate.swift in Sources */,
-				17B74F5B2922B8E400A77BD4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		17B74F5E2922B8E400A77BD4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17B74F5F2922B8E400A77BD4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		17B74F632922B8E400A77BD4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +292,6 @@
 				INFOPLIST_FILE = APNGKitPlayground/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +319,6 @@
 				INFOPLIST_FILE = APNGKitPlayground/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		17B74F6E2922B9EA00A77BD4 /* XCRemoteSwiftPackageReference "APNGKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/APNGKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		17B74F6F2922B9EA00A77BD4 /* APNGKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17B74F6E2922B9EA00A77BD4 /* XCRemoteSwiftPackageReference "APNGKit" */;
+			productName = APNGKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 17B74F4D2922B8E400A77BD4 /* Project object */;
 }
